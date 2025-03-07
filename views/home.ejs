@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Solutions</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body class="bg-gray-100">
+    <nav class="p-4 bg-blue-600 text-white flex justify-between">
+        <a href="/" class="text-2xl font-bold">Climate Solutions</a>
+        <div>
+            <a href="/about" class="px-4">About</a>
+            <details class="inline-block relative">
+                <summary class="px-4 cursor-pointer">Sector</summary>
+                <ul class="absolute bg-white shadow-lg p-2 rounded">
+                    <li><a href="/solutions/projects?sector=energy" class="block p-2 hover:bg-gray-100">Energy</a></li>
+                    <li><a href="/solutions/projects?sector=agriculture" class="block p-2 hover:bg-gray-100">Agriculture</a></li>
+                    <li><a href="/solutions/projects?sector=technology" class="block p-2 hover:bg-gray-100">Technology</a></li>
+                </ul>
+            </details>
+        </div>
+    </nav>
+
+    <div class="container mx-auto p-6">
+        <div class="hero bg-gray-200 p-10 text-center rounded">
+            <h1 class="text-3xl font-bold">Explore Climate Solutions</h1>
+            <p class="mt-2">Discover innovative projects addressing climate challenges.</p>
+            <a href="/solutions/projects" class="btn mt-4">View Projects</a>
+            <p class="mt-2">Melika Kazemi - 166429233</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+            <div class="card bg-white shadow p-4 rounded">
+                <img src="/images/project1.jpg" alt="Renewable Energy" class="w-full rounded mb-2">
+                <h3 class="text-lg font-bold">Renewable Energy Solutions</h3>
+                <p>Developing clean energy for a sustainable future.</p>
+                <a href="/solutions/projects/1" class="btn mt-2">View Details</a>
+            </div>
+            <div class="card bg-white shadow p-4 rounded">
+                <img src="/images/project2.jpg" alt="Green Architecture" class="w-full rounded mb-2">
+                <h3 class="text-lg font-bold">Green Architecture</h3>
+                <p>Designing eco-friendly buildings to reduce carbon footprint.</p>
+                <a href="/solutions/projects/2" class="btn mt-2">View Details</a>
+            </div>
+            <div class="card bg-white shadow p-4 rounded">
+                <img src="/images/project3.jpg" alt="Smart Water Management" class="w-full rounded mb-2">
+                <h3 class="text-lg font-bold">Smart Water Management</h3>
+                <p>Innovative solutions for water conservation and efficiency.</p>
+                <a href="/solutions/projects/3" class="btn mt-2">View Details</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
