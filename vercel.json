@@ -6,19 +6,18 @@
       "use": "@vercel/node"
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "server.js"
+      "src": "/(.*)",
+      "dest": "server.js"
     }
   ],
   "env": {
-    "PORT": "5001",
     "NODE_ENV": "production"
   },
-  "buildCommand": "npm run vercel-build",
-  "installCommand": "npm install",
-  "outputDirectory": "public",
-  "cleanUrls": true,
-  "trailingSlash": false
+  "build": {
+    "env": {
+      "NPM_CONFIG_PRODUCTION": "false"
+    }
+  }
 }
