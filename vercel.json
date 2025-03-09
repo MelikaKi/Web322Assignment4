@@ -18,6 +18,7 @@
   },
   "buildCommand": "npm run vercel-build",
   "installCommand": "npm install",
+  "outputDirectory": "public",
   "cleanUrls": true,
   "trailingSlash": false
 }
