@@ -7,7 +7,8 @@
     "start": "node server.js",
     "tw:build": "npx tailwindcss -i ./public/css/tailwind.css -o ./public/css/main.css",
     "dev": "nodemon server.js",
-    "vercel-build": "npm run tw:build"
+    "build": "npm run tw:build",
+    "vercel-build": "npm run build && npm install --production"
   },
   "author": "Melika Kazemi",
   "license": "ISC",
