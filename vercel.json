@@ -13,11 +13,11 @@
     }
   ],
   "env": {
+    "PORT": "5001",
     "NODE_ENV": "production"
   },
-  "build": {
-    "env": {
-      "NPM_CONFIG_PRODUCTION": "false"
-    }
-  }
+  "buildCommand": "npm run vercel-build",
+  "installCommand": "npm install",
+  "cleanUrls": true,
+  "trailingSlash": false
 }
