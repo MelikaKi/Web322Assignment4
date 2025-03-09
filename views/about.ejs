@@ -7,10 +7,7 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body class="bg-gray-100">
-    <nav class="p-4 bg-blue-600 text-white flex justify-between">
-        <a href="/" class="text-2xl font-bold">Climate Solutions</a>
-        <a class="active px-4" href="/about">About</a>
-    </nav>
+    <%- include('partials/navbar', {page: '/about'}) %>
 
     <div class="container mx-auto p-6">
         <div class="hero bg-gray-200 p-10 text-center rounded">
