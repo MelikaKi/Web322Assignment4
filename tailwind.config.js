@@ -1,19 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./views/**/*.ejs",
-    "./public/**/*.html",
-    "./partials/**/*.ejs" 
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [
-    require('@tailwindcss/typography'),
-    require('daisyui')
-  ],
-  daisyui: {
-    themes: ["dim"],
-    logs: false 
-  }
+    content: [
+        "./views/*.ejs",
+        "./public/**/*.html",
+        "./views/**/*.ejs"
+    ],
+    theme: {
+        extend: {},
+    },
+    plugins: [
+        require('daisyui'),
+        require('@tailwindcss/typography')
+    ],
+    daisyui: {
+        themes: ["dim"]
+    }
 };
